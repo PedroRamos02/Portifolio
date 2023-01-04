@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Pedro Henrique - Portfólio">
+        <link rel="icon" type="image/png" href="img/p.png">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Hind:wght@300;400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="navegacao">
+                <a class="botao__nav" href="#home">HOME</a>
+                <a class="botao__nav" href="#about">ABOUT</a>
+                <a class="botao__nav" href="#projects">PROJECTS</a>
+                <a class="botao__nav" href="#contacts">CONTACTS</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <p class="apresentacao__1">Olá! Eu me chamo</p>
+            <h1 class="nome">Pedro Henrique</h1>
+            <p class="apresentacao__2">e esse é o meu portfólio.</p>
+            <h2 class="titulo">Dev FrontEnd</h2>
+        </section>
+        <section class="about" id="about">
+            <img class="foto" src="img/foto.png" alt="Imagem de Pedro">
+            <div class="texto__sobre">
+                <h2 class="titulo__about">Sobre mim</h2>
+                <p class="texto__about">Sempre fui apaixonado por tecnologia e desenvolvimento de projetos, desde trabalhos escolares feitos a partir do PowerPoint e Canva, até mesmo esboços de sites criados no Figma. Por volta de um ano atrás me interesei pela área de programação e me empenhei a conhecer mais sobre.</p><br>
+                <p class="texto__about">Passei a estudar com mais afinco, me especializando em Front-end e ao longo do meu período de aprendizagem, adquiri múltiplas experiências e acumulei conhecimentos, criei diversas páginas e projetos web e estou constantemente aprimorando meu domínio, praticando e evoluindo. Para que assim possa me aperfeiçoar cada vez mais!</p>
+                <h3 class="titulo__habilidades">Habilidades</h3>
+                <div class="img__habilidades">
+                    <img class="img__about" src="./img/html.png">
+                    <img class="img__about" src="./img/css.png">
+                    <img class="img__about" src="./img/js.png">
+                    <img class="img__about" src="./img/react.png">
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="projects__titulo">Meus projetos</h2>
+            <div class="cards">
+                <div class="card card__1">
+                    <div class="info__card">
+                        <h3 class="titulo__card">Birdie</h3>
+                        <p class="texto__card">Projeto de rede social inspirado no Twitter</p>
+                        <a class="botao__card" href="https://birdie-theta.vercel.app">Visualizar</a>
+                    </div>
+                </div>
+                <div class="card card__2">
+                    <div class="info__card">
+                        <h3 class="titulo__card">Calculadora</h3>
+                        <p class="texto__card">Feita utilizando JavaScript</p>
+                        <a class="botao__card" href="https://calculadora-psi-ashen.vercel.app">Visualizar</a>
+                    </div>
+                </div>
+                <div class="card card__3">
+                    <div class="info__card">
+                        <h3 class="titulo__card">JC Instações</h3>
+                        <p class="texto__card">Site que criei para meu pai que trabalha como antenista</p>
+                        <a class="botao__card" href="https://jc-ten.vercel.app">Visualizar</a>
+                    </div>
+                </div>
+                <div class="card card__4">
+                    <div class="info__card">
+                        <h3 class="titulo__card">AluraBooks</h3>
+                        <p class="texto__card">Projeto criado a partir das aulas sobre front-end da Alura</p>
+                        <a class="botao__card" href="https://alurabooks-woad.vercel.app">Visualizar</a>
+                    </div>
+                </div>
+                <div class="card card__5">
+                    <div class="info__card">
+                        <h3 class="titulo__card">Jogo de adivinha</h3>
+                        <p class="texto__card">Jogo criado em JavaScript</p>
+                        <a class="botao__card" href="https://jogo-de-adivinha-tau.vercel.app">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+            <a class="outros__projetos" href="https://github.com/PedroRamos02">Mais projetos</a>
+
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="titulo__contato">Me contate através das redes abaixo!</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/pedro02/" class="contato"><img class="img__contato" src="img/linkedin.png"><p class="texto__contato">linkedIn</p></a>
+                <a href="https://github.com/PedroRamos02" class="contato"><img class="img__contato" src="img/github.png"><p class="texto__contato">GitHub</p></a>
+                <a href="https://web.whatsapp.com/send?phone=5551994814929" target="_blank" class="contato"><img class="img__contato" src="img/whatsapp.png"><p class="texto__contato">WhatsApp</p></a>
+                <a href="mailto:phramosaraujo02@gmail.com" class="contato"><img class="img__contato" src="img/email.png"><p class="texto__contato">E-mail</p></a>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "mas-glare": 0
+            });
+        </script>
+    </body>
+</html>

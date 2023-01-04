@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-um: linear-gradient(60deg, #16a085 0%, #f4d03f 100%);
+    --cor-dois: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    --cor-tres: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%);
+    --fonte-primaria: 'Hind', sans-serif;
+    --fonte-secundaria: 'Comfortaa', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.8s;
+    padding: 20px 100px;
+}
+
+.botao__nav {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 10px;
+    color: black;
+}
+
+.botao__nav::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.botao__nav:hover {
+    color: white;
+}
+
+.botao__nav:hover::after {
+    width: 100%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--cor-um);
+    flex-direction: column;
+}
+
+.nome {
+    font-size: 7em;
+    color: #2f3e46;
+}
+
+.apresentacao__1 {
+    margin-top: 4em;
+}
+
+.apresentacao__1, .apresentacao__2 {
+    font-size: 2em;
+    color: #d8e2dc;
+}
+
+.apresentacao__2 {
+    margin-bottom: 4em;
+}
+
+.titulo {
+    font-size: 7em;
+    color: #f4f1de;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about {
+    background: var(--cor-dois);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1em;
+}
+
+.texto__sobre {
+    word-break: normal;
+    padding: 0 2px;
+    width: 39%;
+    text-align:initial;
+    text-indent: 10%;
+    font-size: 16px;
+}
+
+.titulo__about {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.texto__about {
+    font-size: 1.6em;
+    line-height: 1.2em;
+}
+
+.titulo__habilidades {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.img__habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+.img__about {
+    width: 10em;
+}
+
+.projects {
+    height: 100vh;
+    background: var(--cor-tres);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.projects__titulo {
+    margin: 0.8em 0 1em 0;
+    font-size: 4em;
+    color: #d8e2dc;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card__1 {
+    background-image: url(../img/birdie_resized.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__2 {
+    background-image: url(../img/calculadora.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__3 {
+    background-image: url(../img/jc.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__4 {
+    background-image: url(../img//alurabooks.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__5 {
+    background-image: url(../img/jogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__card {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .info__card {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.titulo__card {
+    font-size: 2em;
+    margin: 1em 0;
+    color: #6c757d;
+}
+
+.texto__card {
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.botao__card {
+    text-decoration: none;
+    border-radius: 1em;
+    padding: 0.3em 1em;
+    color: #d8e2dc;
+    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);;
+}
+
+.outros__projetos {
+    margin: 1.2em 0 0.8em 0;
+    font-size: 2em;
+    border-radius: 3em;
+    padding: 0.6em 1em;
+    color: #d8e2dc;
+    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.contacts {
+    height: 100vh;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.titulo__contato {
+    margin: 2em auto 4em auto;
+    font-size: 2.5em;
+    color: #E7ECEF;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.img__contato {
+    width: 2.3em;
+    margin-right: 1em;
+    color: white;
+}
+
+.texto__contato {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1600px) {
+    .home, .about, .projects, .contacts {
+        height: 100%;
+    }
+
+    .nome, .titulo {
+        text-align: center;
+    }
+
+    .nome {
+        font-size: 5em;
+    }
+
+    .titulo {
+        font-size: 5em;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .texto__sobre {
+        word-break: normal;
+        padding: 0 2px;
+        width: 95%;
+        text-align:start;
+        text-indent: 10%;
+    }
+
+    .img__habilidades {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        width: 380px;
+        align-items: center;
+    }
+
+    .texto__about {
+        text-align: center;
+        text-indent: 0%;
+    }
+
+    .projects__titulo {
+        text-align: center;
+    }
+}
+
+
+    
+    
